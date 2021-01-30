@@ -8,12 +8,12 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 
-
-#http://brunorocha.org/python/watching-a-directory-for-file-changes-with-python.html
-
-
-
-
+"""
+socketfunction connects to the client server and sends the files.
+The argument it takes (srcpath) is obtained from MyHandler
+this is so that it can know which file to send when MyHandler
+detects a new file creation.
+"""
 
 
 def socketfunction(srcpath):
@@ -50,7 +50,11 @@ def socketfunction(srcpath):
 
 
 
-
+"""
+MyHandler watches for files created in the directory and
+prints out what the name of the file was and then runs
+the socketfunction()
+"""
 
 class MyHandler(FileSystemEventHandler):
 
@@ -71,7 +75,7 @@ class MyHandler(FileSystemEventHandler):
         self.process(event)
     
 
-
+#Main
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(message)s', #format of 
