@@ -20,8 +20,8 @@ def socketfunction(srcpath):
     SEPERATOR = "<SEPERATOR>"
     BUFFER_SIZE = 4096
 
-    host = "192.168.1.186"  
-    port = 8080
+    host = ""  # user your IP address on the machine where you want the files sent 000.000.0.000
+    port = 8080 #googles open port
 
     #filename = MyHandler.on_created()
     filesize = os.path.getsize(srcpath)
