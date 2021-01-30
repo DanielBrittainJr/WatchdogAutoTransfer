@@ -1,0 +1,7 @@
+detect.py uses the Watchdog library to monitor file changes and the tqdm library for the progress bars.
+
+Watchdog
+https://pythonhosted.org/watchdog/
+
+tqdm
+https://tqdm.github.io/
