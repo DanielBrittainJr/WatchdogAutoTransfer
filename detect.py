@@ -80,7 +80,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(message)s', #format of 
                         datefmt='%Y-%m-%d %H:%M:%S')
-    path = "C:/Users/djbri/Desktop/Media"
+    path = "" #directory path that you want new files monitored to be sent
     #initialize event handler
     event_handler = MyHandler()
     #initialize observer
