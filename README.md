@@ -7,6 +7,8 @@ Instructions for use:
 
 To use, clone the repository and put the detect.py file in the folder that you would like newly created files to be monitored and sent.
 
+You will need to edit the detect.py file and the server.py file and change the "host" and "SERVER_HOST" variable to the IP addess of the device that will be receiving the files.
+
 Put the server.py file on the other machine in the folder that you want the files to be sent to.
 
 Run the server.py file in the console with either "python server" or "python3 server" in the terminal within the relevent directory.
