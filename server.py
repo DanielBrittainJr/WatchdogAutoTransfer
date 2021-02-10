@@ -3,7 +3,7 @@ import tqdm
 import os
 
 #device IP address
-SERVER_HOST = "192.168.1.186" #0.0.0.0 OR localhost
+SERVER_HOST = "" #0.0.0.0 OR localhost
 SERVER_PORT = 8080
 
 #receive 4096 bytes each time
