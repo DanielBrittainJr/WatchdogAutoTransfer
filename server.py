@@ -41,11 +41,9 @@ while True:
 #receive file from sockets and writing to file stream
     progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
     with open(filename, "wb") as f:
-        for _ in progress:
-        #read 1024 bytes from the socket (receiver)
+        for _ in progress: #read 1024 bytes from the socket (receiver)
             bytes_read = client_socket.recv(BUFFER_SIZE)
             if not bytes_read:
-            #nothing is received, file transmitting is done
                 break
         #write to the file the bytes we received
             f.write(bytes_read)
