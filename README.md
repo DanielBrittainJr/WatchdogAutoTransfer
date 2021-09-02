@@ -1,4 +1,7 @@
 # WatchdogAutoTransfer
+
+(Currently being refactored, initially hacked together in a day or so)
+
 Automatically send files from client to server when a new file is created by using the watchdog library to monitor a folder for new files and socket to transfer them.
 
 I personally use this to passively download files from the internet on my main PC and they are automatically sent to my Raspberry PI device.
